@@ -4,15 +4,15 @@ from time import sleep
 
 import os
 
-print("Hello in Found key game!\n"
+print('Hello in Found key game!\n'
       'Game area this coordinate system about of size x = 20 on y = 20. '
       'Your task is found value x and y on which is value key.\n')
 
 print('Instruction to movement:\n'
-      '- w (movement to up)\n'
-      '- s (movement to down)\n'
-      '- a (movement to left)\n'
-      '- d (movement to right)\n')
+      '- w (movement y value to up)\n'
+      '- s (movement y value to down)\n'
+      '- a (movement x value to down)\n'
+      '- d (movement x value to up)\n')
 
 game_position_key_x = randint(0, 20)  # Draw key position
 game_position_key_y = randint(0, 20)
@@ -28,7 +28,8 @@ while start_loop == 0:
     player_position = player_position_x, player_position_y  # Player position
 
     if key_position == player_position:   # When player found key
-        print('Nice! You found key!')
+        print('Nice! You found key!\n'
+              'This is you prize: https://www.youtube.com/watch?v=dQw4w9WgXcQ')  
         while True:
             end_game = input('You want play again? (yes or no)\n')
             if end_game == 'yes':
@@ -61,4 +62,8 @@ while start_loop == 0:
             os.system('cls')
         case 'a' if player_position_x >= 1:   # Command on move to left
             player_position_x -= 1
+            os.system('cls')
+        case _:   # Incorrect command move or movement is impossible
+            print('Sorry, this is incorrect command or movement is impossible. You try again.')
+            sleep(3.5)
             os.system('cls')
