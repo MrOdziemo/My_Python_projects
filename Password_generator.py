@@ -39,5 +39,5 @@ while start_loop < 1:   # Create and start loop
             elif use_again == 'no':
                 exit()
             else:
-                print('This is bad command, you write again.')
+                print('This is bad command, you write again.\n')
                 continue
