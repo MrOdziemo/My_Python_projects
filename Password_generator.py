@@ -40,3 +40,4 @@ while start_loop < 1:   # Create and start loop
                 exit()
             else:
                 print('This is bad command, you write again.')
+                continue
