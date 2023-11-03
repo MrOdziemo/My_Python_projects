@@ -34,7 +34,7 @@ while True:
         'Benin': 'Porto Novo',
         'Bhutan': 'Bhutan',
         'Bolivia': 'La Paz' or 'Sucre',
-        'Bosnia and Herzegovina': '	Sarajevo',
+        'Bosnia and Herzegovina': 'Sarajevo',
         'Botswana': 'Gaborone',
         'Brazil': 'Brasilia',
         'Brunei': 'Bandar Seri Begawan',
