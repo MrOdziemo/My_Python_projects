@@ -1,0 +1,10 @@
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+duplicates = df[df.duplicated(subset=["Duration", "Maxpulse"])]
+
+if not duplicates.empty:
+    print(duplicates)
+else:
+    print("Brak duplikatów.")
